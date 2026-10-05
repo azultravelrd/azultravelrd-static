@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Servicios – Azul Travel RD</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="./" class="logo-link">
+        <img src="./images/logo.png" alt="Azul Travel RD Logo" class="logo-img">
+        <span class="site-title">AZUL TRAVEL RD</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+        <nav class="nav-menu" id="navMenu">
+        <!-- Este contenedor se rellenará automáticamente desde JS -->
+        <ul id="navList"></ul>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner de la Página -->
+    <section class="services-hero">
+      <div class="services-hero-content">
+        <span class="subtitle">Las vacaciones de tus sueños</span>
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones integrales de viaje diseñadas a la medida de tus necesidades.</p>
+        <div class="hero-contact-badges">
+          <a href="tel:8098056806" class="hero-badge"><i class="fa-solid fa-phone"></i> 809-805-6806</a>
+          <a href="tel:8094229988" class="hero-badge"><i class="fa-solid fa-phone"></i> 809-422-9988</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Servicios al Cliente -->
+<section class="section-padding services-section">
+  <div class="container">
+    
+    <div class="text-center mb-5">
+      <span class="badge-tag">Atención Personalizada</span>
+      <h2 class="section-title">Servicio al Cliente de Clase Mundial</h2>
+      <p class="section-subtitle-text">Te acompañamos en cada etapa de tu planificación para garantizar una experiencia sin complicaciones.</p>
+    </div>
+
+    <div class="services-grid">
+      
+      <!-- Tarjeta 1: Boletería Aérea -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-plane-departure"></i></div>
+        <h3>Boletería Aérea</h3>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-circle-check"></i> Sistema de emisión de boletos computarizado.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Entrega e itinerarios inmediatos vía email.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Tarifas y precios altamente competitivos.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Acceso a las mejores ofertas emisivas de aerolíneas.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 2: Hospedaje y Cruceros -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-hotel"></i></div>
+        <h3>Hospedaje y Cruceros</h3>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-circle-check"></i> Reserva de hoteles locales e internacionales.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Descuentos en vacaciones en hoteles nacionales.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Circuitos a Europa, Asia, África y América.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Reservas en las mejores líneas de cruceros.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 3: Movilidad & Traslados -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-car-side"></i></div>
+        <h3>Movilidad & Traslados</h3>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-circle-check"></i> Renta de vehículos a nivel mundial.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Traslados desde aeropuertos hacia cualquier punto de RD.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Servicios para individuales y grupos.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Asistencia personalizada durante el trayecto.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 4: Excursiones y Protección -->
+      <div class="service-card">
+        <div class="service-icon"><i class="fa-solid fa-umbrella-beach"></i></div>
+        <h3>Excursiones y Protección</h3>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-circle-check"></i> Excursiones a atractivos de la República Dominicana.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Seguros y asistencias internacionales de viaje.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Cotizaciones garantizadas en menos de 24 horas.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Paquetes turísticos completos a la medida.</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta 5: Eventos Corporativos (Destacada al final) -->
+      <div class="service-card service-card-wide">
+        <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <h3>Viajes Corporativos & Eventos</h3>
+        <ul class="service-list">
+          <li><i class="fa-solid fa-circle-check"></i> Organización de congresos, convenciones y seminarios.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Planificación de eventos especiales y viajes de incentivo.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Coordinación logística integral para empresas.</li>
+          <li><i class="fa-solid fa-circle-check"></i> Asesoría continua con los mejores proveedores del sector.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Banner Call to Action para Solicitud de Cotización -->
+<!-- Banner Call to Action para Solicitud de Cotización -->
+    <section class="section-padding cta-services-section">
+      <div class="container text-center">
+        <h2>¿Listo para planificar tu próxima aventura?</h2>
+        <p>Déjanos tu mensaje y un asesor experto se comunicará contigo lo más pronto posible.</p>
+
+        <!-- Se aplica la clase de botón formateado -->
+        <a href="https://wa.me/18578321961?text=Hola%2C%20necesito%20una%20cotizaci%C3%B3n%20para%20un%20servicio" target="_blank" class="btn-cta-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> Solicitar Cotización
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/18578321961?text=Hola%2C%20necesito%20m%C3%A1s%20informaci%C3%B3n" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="site-title">AZUL TRAVEL RD</p>
+      <p>&copy; 2026 Azul Travel SRL - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+   <script src="./js/nav-data.js"></script>
+  <script src="./js/main.js"></script>
+   
+</body>
+</html>

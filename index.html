@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="referrer" content="strict-origin-when-cross-origin">  
+
+
+  <title>Azul Travel RD – Azul Travel SRL | Agencias de Viajes</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Swiper CSS (Slider) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Fancybox CSS (Librería para ampliar imágenes al hacer clic) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="./" class="logo-link">
+        <img src="./images/logo.png" alt="Azul Travel RD Logo" class="logo-img">
+        <span class="site-title">AZUL TRAVEL RD</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+        <nav class="nav-menu" id="navMenu">
+        <!-- Este contenedor se rellenará automáticamente desde JS -->
+        <ul id="navList"></ul>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Slider principal -->
+    <section class="hero-slider">
+    <div class="swiper heroSwiper">
+        <!-- Este contenedor se poblará dinámicamente desde JS -->
+        <div class="swiper-wrapper" id="heroWrapper"></div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    </section>
+
+    <!-- Sección Engine / Búsqueda Suplitur Iframe -->
+    <div id="searchFormContainer">
+        <section class="section-padding container">
+            <div class="custom-search-card text-center">
+
+                <h2 class="section-title">
+                    Busca tu Próximo Viaje
+                </h2>
+
+                <p>
+                    Consulta hoteles, vuelos, actividades y traslados con tarifas en tiempo real.
+                </p>
+
+                <a href="./buscador.html" class="btn-search">
+                    <i class="fa-solid fa-magnifying-glass"></i> Abrir Motor de Búsqueda
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <!-- Carrusel: Excursiones y Tours -->
+
+    <!-- Sección: Excursiones y Tours (Cuadrícula Estática) -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <h3 class="section-title">Excursiones y Tours</h3>
+    
+            <!-- Contenedor Grid donde se renderizarán todas las ofertas -->
+            <div class="tours-grid" id="toursContainer"></div>
+        </div>
+    </section>
+
+    <!-- Sección: Expertos en Visado -->
+    <section class="section-padding visa-section">
+      <div class="container">
+        <h2 class="visa-title">Expertos en Visado</h2>
+        <div class="visa-grid">
+          <div class="visa-flag">
+            <img src="./images/logo-europeo.png" alt="Unión Europea">
+          </div>
+          <div class="visa-flag">
+            <img src="./images/logo-americano.png" alt="Estados Unidos">
+          </div>
+          <div class="visa-info">
+            <p><i class="fa-solid fa-circle-info"></i> Todos los dominicanos necesitan tener una visa vigente para ingresar a Estados Unidos y a la Unión Europea. En nuestra agencia de viajes te asistimos en todo el proceso para obtener tu visado. Te ayudamos a planificar tu viaje con reservas de boletos, hoteles y excursiones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: ¿Por qué elegirnos? -->
+    <section class="section-padding container text-center">
+      <h2 class="main-heading">¿Por qué elegirnos?</h2>
+      <p class="description-text">Azul Tour & Travel fue fundada en el 2014, en Santo Domingo, República Dominicana. Con un trabajo serio y profesional, basado en valores y un personal pro-activo, somos una de las empresas de más credibilidad en el sector.</p>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="icon-box icon-yellow"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <h5>Mejor Precio</h5>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box icon-blue"><i class="fa-solid fa-calendar-check"></i></div>
+          <h5>Reserva Rápida</h5>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box icon-yellow"><i class="fa-solid fa-user-shield"></i></div>
+          <h5>Servicio Premium</h5>
+        </div>
+        <div class="feature-card">
+          <div class="icon-box icon-blue"><i class="fa-solid fa-lock"></i></div>
+          <h5>Pago Seguro</h5>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carrusel: Hoteles & Destinos -->
+    <section class="section-padding destinations-section">
+        <div class="container">
+            <h2 class="destinations-title">Hoteles & Destinos</h2>
+            <div class="swiper destinationsSwiper">
+                <!-- Este contenedor se poblará dinámicamente desde JS -->
+                <div class="swiper-wrapper" id="destinationsWrapper"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/18578321961?text=Hola%2C%20necesito%20m%C3%A1s%20informaci%C3%B3n" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="site-title">AZUL TRAVEL RD</p>
+      <p>&copy; 2026 Azul Travel SRL - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+  <script src="./js/tours-data.js"></script>
+  <script src="./js/hero-data.js"></script>
+  <script src="./js/destinations-data.js"></script>
+  <script src="./js/nav-data.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

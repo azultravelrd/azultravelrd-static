@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>Contactos – Azul Travel RD</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="./" class="logo-link">
+        <img src="./images/logo.png" alt="Azul Travel RD Logo" class="logo-img">
+        <span class="site-title">AZUL TRAVEL RD</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+        <nav class="nav-menu" id="navMenu">
+        <!-- Este contenedor se rellenará automáticamente desde JS -->
+        <ul id="navList"></ul>
+        </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner de Contacto -->
+    <section class="contact-hero">
+      <div class="contact-hero-content">
+        <span class="subtitle">Estamos para ayudarte</span>
+        <h1>Ponte en Contacto</h1>
+        <p>Planifica tu próximo destino con nuestro equipo de asesores expertos.</p>
+      </div>
+    </section>
+
+    <!-- Mapa de Ubicación Google Maps -->
+    <section class="contact-map-section">
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.341492080344!2d-69.9329864!3d18.4682025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea563004e0e5611%3A0xb3ef3ec3a7bbd387!2sAzul%20Travel%20RD!5e0!3m2!1ses!2sdo!4v1700000000000!5m2!1ses!2sdo" 
+          width="100%" 
+          height="400" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <!-- Tarjetas de Información de Contacto -->
+    <section class="section-padding container">
+      <div class="text-center mb-5">
+        <span class="badge-tag">Canales Directos</span>
+        <h2 class="section-title">Estamos para Ayudarte</h2>
+        <p class="section-subtitle-text">Comunícate con nuestras oficinas en República Dominicana y Estados Unidos.</p>
+      </div>
+
+      <div class="contact-info-grid">
+        <!-- Tarjeta 1: Teléfono 24/7 -->
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-headset"></i></div>
+          <div class="contact-details">
+            <span class="contact-label">Atención 24/7</span>
+            <h4>EEUU: 857-832-1961</h4>
+            <a href="tel:18578321961" class="contact-link">Llamar ahora</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2: Dirección EEUU -->
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="contact-details">
+            <span class="contact-label">Oficina EE.UU.</span>
+            <h4>445 Essex 2 ND FL St Lawrence MA 01840</h4>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3: Correo Electrónico -->
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="contact-details">
+            <span class="contact-label">Correo Electrónico</span>
+            <h4>azultravelrd@gmail.com</h4>
+            <a href="mailto:azultravelrd@gmail.com" class="contact-link">Enviar correo</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 4: WhatsApp RD -->
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+          <div class="contact-details">
+            <span class="contact-label">WhatsApp RD</span>
+            <h4>809-805-6806</h4>
+            <a href="https://wa.me/18098056806" target="_blank" class="contact-link">Escribir por WhatsApp</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta 5: Dirección RD -->
+        <div class="contact-card">
+          <div class="contact-icon"><i class="fa-solid fa-building"></i></div>
+          <div class="contact-details">
+            <span class="contact-label">Oficina Rep. Dom.</span>
+            <h4>Av. 27 de Febrero #313, Santo Domingo</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de Mensaje -->
+    <section class="section-padding contact-form-section">
+      <div class="container">
+        <div class="form-wrapper">
+          <div class="text-center mb-4">
+            <span class="badge-tag">Mensaje Directo</span>
+            <h2 class="section-title">Envíanos un Mensaje</h2>
+            <p class="section-subtitle-text">Completa los campos a continuación y te responderemos a la brevedad.</p>
+          </div>
+
+            <form id="whatsappContactForm" class="contact-form">
+            <div class="form-grid">
+                <div class="form-group">
+                <label for="name"><i class="fa-solid fa-user"></i> Nombre Completo</label>
+                <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                <label for="subject"><i class="fa-solid fa-tag"></i> Asunto</label>
+                <input type="text" id="subject" required>
+                </div>
+                <div class="form-group full-width">
+                <label for="message"><i class="fa-solid fa-comment-dots"></i> Mensaje</label>
+                <textarea id="message" rows="5" required></textarea>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <button type="submit" class="btn-submit">
+                <i class="fa-brands fa-whatsapp"></i> Enviar por WhatsApp
+                </button>
+            </div>
+            </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/18578321961?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="site-title">AZUL TRAVEL RD</p>
+      <p>&copy; 2026 Azul Travel SRL - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+   <script src="./js/nav-data.js"></script>
+  <script src="./js/main.js"></script>
+   
+</body>
+</html>

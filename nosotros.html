@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+  <title>¿Quiénes Somos? – Azul Travel RD</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Estilos Personalizados -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="./" class="logo-link">
+        <img src="./images/logo.png" alt="Azul Travel RD Logo" class="logo-img">
+        <span class="site-title">AZUL TRAVEL RD</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+        <nav class="nav-menu" id="navMenu">
+        <!-- Este contenedor se rellenará automáticamente desde JS -->
+        <ul id="navList"></ul>
+        </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Banner de la Página -->
+    <section class="about-hero">
+      <div class="about-hero-content">
+        <span class="subtitle">Conoce nuestra historia</span>
+        <h1>¿Quiénes Somos?</h1>
+        <p>Tu aliado de confianza para explorar el mundo desde República Dominicana.</p>
+      </div>
+    </section>
+
+    <!-- Sección Historia & Misión -->
+    <section class="section-padding container">
+      <div class="about-grid">
+        <div class="about-text-box">
+          <span class="badge-tag">Nuestra Trayectoria</span>
+          <h2>Fundados en el 2014 con pasión por viajar</h2>
+          <p>
+            <strong>Azul Tour & Travel</strong> fue fundada en el 2014 en Santo Domingo, República Dominicana. Con un trabajo serio, transparente y profesional, basado en valores firmes y un equipo proactivo y dinámico, nos hemos consolidado como una de las empresas de mayor credibilidad en el sector turístico nacional e internacional.
+          </p>
+          <p>
+            Garantizamos un servicio altamente personalizado respaldado por las mejores herramientas tecnológicas del mercado, adaptando cada experiencia a las necesidades específicas de nuestros clientes y ofreciendo las tarifas de boletería más competitivas.
+          </p>
+        </div>
+
+        <div class="about-stats-grid">
+          <div class="stat-card">
+            <i class="fa-solid fa-award"></i>
+            <h3>+10 Años</h3>
+            <p>De experiencia en el sector</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-plane-departure"></i>
+            <h3>100%</h3>
+            <p>Compromiso con tu viaje</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-users"></i>
+            <h3>Miles</h3>
+            <p>De clientes satisfechos</p>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Garantía</h3>
+            <p>Y soporte personalizado 24/7</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Misión, Visión y Valores -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="values-grid">
+          <div class="value-card">
+            <div class="value-icon"><i class="fa-solid fa-bullseye"></i></div>
+            <h3>Misión</h3>
+            <p>Brindar soluciones turísticas integrales de alta calidad, garantizando tarifas competitivas y asesoría experta para crear memorias inolvidables en cada destino.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><i class="fa-solid fa-eye"></i></div>
+            <h3>Visión</h3>
+            <p>Ser reconocidos como la agencia de viajes líder en República Dominicana por la excelencia en el servicio al cliente, innovación tecnológica y confiabilidad.</p>
+          </div>
+          <div class="value-card">
+            <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
+            <h3>Valores</h3>
+            <p>Transparencia, profesionalismo, responsabilidad, innovación constante y una profunda vocación de servicio guiada por la empatía hacia el viajero.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Equipo Dedicado (Actualizada de la foto original) -->
+    <section class="section-padding container text-center">
+      <span class="badge-tag">Nuestro Talento</span>
+      <h2 class="section-title">Equipo Dedicado</h2>
+      <p class="section-subtitle-text">Profesionales apasionados dedicados a hacer realidad tus sueños de viaje.</p>
+
+      <div class="team-grid">
+        <!-- Miembro 1 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img src="./images/team/jonny-espinal.webp" alt="Jonny Espinal - Gerente General">
+          </div>
+          <div class="team-info">
+            <h4>Jonny Espinal</h4>
+            <span class="team-role">Gerente General</span>
+          </div>
+        </div>
+
+        <!-- Miembro 2 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img src="./images/team/rolando-espinal.webp" alt="Rolando Espinal - Gerente Financiero">
+          </div>
+          <div class="team-info">
+            <h4>Rolando Espinal</h4>
+            <span class="team-role">Gerente Financiero</span>
+          </div>
+        </div>
+
+        <!-- Miembro 3 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img src="./images/team/yonelys-peralta.webp" alt="Yonelys Peralta - Gerente de Publicidad y Comunicación">
+          </div>
+          <div class="team-info">
+            <h4>Yonelys Peralta</h4>
+            <span class="team-role">Gerente de Publicidad & Comunicación</span>
+          </div>
+        </div>
+
+        <!-- Miembro 4 -->
+        <div class="team-card">
+          <div class="team-img-wrapper">
+            <img src="./images/team/andreisis-peralta.webp" alt="Andreisis Peralta - Gerente de Ventas Mercado Internacional">
+          </div>
+          <div class="team-info">
+            <h4>Andreisis Peralta</h4>
+            <span class="team-role">Gerente de Ventas M. Internacional</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/18578321961?text=Hola%2C%20quisiera%20recibir%20informaci%C3%B3n" class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="site-title">AZUL TRAVEL RD</p>
+      <p>&copy; 2026 Azul Travel SRL - Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+   <script src="./js/nav-data.js"></script>
+  <script src="./js/main.js"></script>
+   
+</body>
+</html>
